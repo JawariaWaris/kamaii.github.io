@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!-- Header Section End -->
+<!-- Start Page Header -->
+<div class="page-header">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="breadcrumb">
+     <a href="#">
+      <i class="icon-home">
+      </i>
+      Home
+     </a>
+     <span class="crumbs-spacer">
+      <i class="fa fa-angle-double-right">
+      </i>
+     </span>
+     <span class="current">
+      About Us
+     </span>
+     <h2 class="entry-title">
+      About Us
+     </h2>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Page Header -->
+<!-- About Us Section Start -->
+<section class="about section">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-6">
+    <div class="single-image">
+     <a href="#">
+      <img alt="" src="{% static 'img/about/img1.jpg' %}"/>
+     </a>
+    </div>
+   </div>
+   <div class="col-md-6">
+    <div class="about-content">
+     <h3>
+      welcome to demo
+     </h3>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dol in reprehenderit in
+     </p>
+     <br/>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dol in reprehenderit in
+     </p>
+     <a class="btn btn-common btn-more" href="#">
+      Read More
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<!-- About Us Section End -->
+<!-- Team Section Start -->
+<section class="team">
+ <div class="container">
+  <h1 class="section-title">
+   Team Members
+  </h1>
+  <div class="row">
+   <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="team-item">
+     <figure>
+      <img alt="" src="{% static 'img/team/img1.jpg' %}"/>
+      <figcaption>
+       <div class="info">
+        <h3>
+         ABC
+        </h3>
+        <p>
+         Chief Technical Officer
+        </p>
+       </div>
+       <div class="social">
+        <a class="twitter" href="#">
+         <i class="fa fa-twitter">
+         </i>
+        </a>
+        <a class="facebook" href="#">
+         <i class="fa fa-facebook">
+         </i>
+        </a>
+        <a class="google-plus" href="#">
+         <i class="fa fa-google-plus">
+         </i>
+        </a>
+       </div>
+      </figcaption>
+     </figure>
+    </div>
+   </div>
+   <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="team-item">
+     <figure>
+      <img alt="" src="{% static 'img/team/img2.jpg' %}"/>
+      <figcaption>
+       <div class="info">
+        <h3>
+         ABC
+        </h3>
+        <p>
+         Graphic Designer
+        </p>
+       </div>
+       <div class="social">
+        <a class="twitter" href="#">
+         <i class="fa fa-twitter">
+         </i>
+        </a>
+        <a class="facebook" href="#">
+         <i class="fa fa-facebook">
+         </i>
+        </a>
+        <a class="google-plus" href="#">
+         <i class="fa fa-google-plus">
+         </i>
+        </a>
+       </div>
+      </figcaption>
+     </figure>
+    </div>
+   </div>
+   <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="team-item">
+     <figure>
+      <img alt="" src="{% static 'img/team/img3.jpg' %}"/>
+      <figcaption>
+       <div class="info">
+        <h3>
+         ABC
+        </h3>
+        <p>
+         Buniness Manager
+        </p>
+       </div>
+       <div class="social">
+        <a class="twitter" href="#">
+         <i class="fa fa-twitter">
+         </i>
+        </a>
+        <a class="facebook" href="#">
+         <i class="fa fa-facebook">
+         </i>
+        </a>
+        <a class="google-plus" href="#">
+         <i class="fa fa-google-plus">
+         </i>
+        </a>
+       </div>
+      </figcaption>
+     </figure>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<!-- Team Section End -->
+<!-- Support Section Start -->
+<div class="support section">
+ <div class="container">
+  <div class="row">
+   <div class="support-inner">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+     <div class="row-normal clearfix">
+      <div class="support-info">
+       <div class="info-title">
+        <i class="icon-plane">
+        </i>
+        Easy Shipping Citywide
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+     <div class="row-normal clearfix">
+      <div class="support-info">
+       <div class="info-title">
+        <i class="icon-earphones-alt">
+        </i>
+        24/7 Customer Service
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+     <div class="row-normal clearfix">
+      <div class="support-info">
+       <div class="info-title">
+        <i class="icon-heart">
+        </i>
+        Easy Return Policy
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- Support Section End -->
+{% endblock%}

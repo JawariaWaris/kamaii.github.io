@@ -1,0 +1,299 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!-- Header Section End -->
+<!-- Start Page Header -->
+<div class="page-header">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="breadcrumb">
+     <a href="#">
+      <i class="icon-home">
+      </i>
+      Home
+     </a>
+     <span class="crumbs-spacer">
+      <i class="fa fa-angle-double-right">
+      </i>
+     </span>
+     <span class="current">
+      Compare
+     </span>
+     <h2 class="entry-title">
+      Compare Products
+     </h2>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Page Header -->
+<!-- Content Start -->
+<div id="content">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="entry-heading">
+     <h3 class="text-center">
+      Compare Products
+     </h3>
+    </div>
+    <div class="page-content">
+     <table class="table table-coomare">
+      <tbody>
+       <tr>
+        <td class="compare-lable">
+         Product Image
+        </td>
+        <td class="text-center">
+         <a href="#">
+          <img alt="" src="{% static 'img/compare/p1.jpg' %}"/>
+         </a>
+        </td>
+        <td class="text-center">
+         <a href="#">
+          <img alt="" src="{% static 'img/compare/p2.jpg' %}"/>
+         </a>
+        </td>
+        <td class="text-center">
+         <a href="#">
+          <img alt="" src="{% static 'img/compare/p3.jpg' %}"/>
+         </a>
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Product Name
+        </td>
+        <td>
+         Perfomax
+        </td>
+        <td>
+         Perfomax
+        </td>
+        <td>
+         Perfomax
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Rating
+        </td>
+        <td>
+         <div class="product-star">
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <span>
+           (3 Reviews)
+          </span>
+         </div>
+        </td>
+        <td>
+         <div class="product-star">
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <span>
+           (9 Reviews)
+          </span>
+         </div>
+        </td>
+        <td>
+         <div class="product-star">
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <i class="fa fa-star">
+          </i>
+          <span>
+           (5 Reviews)
+          </span>
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Price
+        </td>
+        <td class="price">
+         $12
+        </td>
+        <td class="price">
+         $20
+        </td>
+        <td class="price">
+         $49
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Description
+        </td>
+        <td>
+         Printed evening dress with straight sleeves with black thin waist belt and ruffled linings.
+        </td>
+        <td>
+         Printed evening dress with straight sleeves with black thin waist belt and ruffled linings.
+        </td>
+        <td>
+         Printed evening dress with straight sleeves with black thin waist belt and ruffled linings.
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Manufacturer
+        </td>
+        <td>
+         Cucgu
+        </td>
+        <td>
+         Nakia
+        </td>
+        <td>
+         Gola
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Availability
+        </td>
+        <td>
+         Instock (30 items)
+        </td>
+        <td>
+         Out of stock
+        </td>
+        <td>
+         Instock (18 items)
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Sku
+        </td>
+        <td>
+         #333333
+        </td>
+        <td>
+         #444444
+        </td>
+        <td>
+         #eeeeee
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Size
+        </td>
+        <td>
+         X
+        </td>
+        <td>
+         XL
+        </td>
+        <td>
+         XS
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Weight
+        </td>
+        <td>
+         Blue
+        </td>
+        <td>
+         Red
+        </td>
+        <td>
+         Black
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Dimensions
+        </td>
+        <td>
+         0.3kg
+        </td>
+        <td>
+         0.5kg
+        </td>
+        <td>
+         10kg
+        </td>
+       </tr>
+       <tr>
+        <td class="compare-lable">
+         Action
+        </td>
+        <td class="action">
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Add to cart" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          Add to cart
+         </a>
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Add To Wishlist" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          <i class="icon-heart">
+          </i>
+         </a>
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Close" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          <i class="icon-close">
+          </i>
+         </a>
+        </td>
+        <td class="action">
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Add to cart" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          Add to cart
+         </a>
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Add To Wishlist" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          <i class="icon-heart">
+          </i>
+         </a>
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Close" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          <i class="icon-close">
+          </i>
+         </a>
+        </td>
+        <td class="action">
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Add to cart" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          Add to cart
+         </a>
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Add To Wishlist" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          <i class="icon-heart">
+          </i>
+         </a>
+         <a class="add-to-cart-wrap btn btn-common" data-original-title="Close" data-placement="top" data-toggle="tooltip" data-tooltip-added-text="Added to cart" href="#" title="">
+          <i class="icon-close">
+          </i>
+         </a>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- Content End -->
+{% endblock%}

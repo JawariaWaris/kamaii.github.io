@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!-- Header Section End -->
+<!-- Error Section Start -->
+<section id="error-404">
+ <div class="container">
+  <div class="row text-center">
+   <h1>
+    404
+   </h1>
+   <h2 class="page-title">
+    Oops, looks like a ghost!
+   </h2>
+   <p>
+    The page you are looking for can't be found. Go home by
+    <a href="{% url 'index' %}">
+     Clicking here.
+    </a>
+   </p>
+  </div>
+ </div>
+</section>
+<!-- Error Section End -->
+{% endblock%}

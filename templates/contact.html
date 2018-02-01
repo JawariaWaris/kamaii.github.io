@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!-- Header Section End -->
+<!-- Start Page Header -->
+<div class="page-header">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="breadcrumb">
+     <a href="#">
+      <i class="icon-home">
+      </i>
+      Home
+     </a>
+     <span class="crumbs-spacer">
+      <i class="fa fa-angle-double-right">
+      </i>
+     </span>
+     <span class="current">
+      Contact Us
+     </span>
+     <h2 class="entry-title">
+      Contact Us
+     </h2>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Page Header -->
+<!-- Content Section -->
+<section id="content">
+ <div class="contact-info">
+  <div class="container">
+   <div class="contact-info-wrapper clearfix">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+     <div class="contact-item-wrapper">
+      <h4>
+       Address
+      </h4>
+      <div class="info">
+       <div class="icon">
+        <i class="icon-location-pin">
+        </i>
+       </div>
+       <p>
+        Siddique Trade Center
+        <br/>
+        Lahore,Punjab,Pakistan.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+     <div class="contact-item-wrapper">
+      <h4>
+       Phone
+      </h4>
+      <div class="info">
+       <div class="icon">
+        <i class="icon-screen-smartphone">
+        </i>
+       </div>
+       <p>
+        Phone: +92 300 1234567
+        <br/>
+        Fax: 0-123-456
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+     <div class="contact-item-wrapper">
+      <h4>
+       E-mail
+      </h4>
+      <div class="info">
+       <div class="icon">
+        <i class="icon-paper-plane">
+        </i>
+       </div>
+       <p>
+        info@kamaii.com
+        <br/>
+        admin@kamaii.com
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-12">
+    <div class="header-wrap text-center">
+     <h3>
+      Send us a message!
+     </h3>
+     <p class="description">
+      Aenean a turpis finibus euismod augue et facilisis elit. In sed quam et dui.
+     </p>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="contact-form-wrapper">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <form class="contact-form" data-toggle="validator" id="contactForm">
+      <div class="row">
+       <div class="col-md-6 col-xs-12">
+        <div class="row">
+         <div class="col-md-12">
+          <div class="form-group">
+           <input class="form-control" data-error="Please enter your name" id="name" name="name" placeholder="Full Name" required="" type="text"/>
+           <div class="help-block with-errors">
+           </div>
+          </div>
+         </div>
+         <div class="col-md-12">
+          <div class="form-group">
+           <input class="form-control" data-error="Please enter your email" id="email" placeholder="mail@sitename.com" required="" type="email"/>
+           <div class="help-block with-errors">
+           </div>
+          </div>
+         </div>
+         <div class="col-md-12">
+          <div class="form-group">
+           <input class="form-control" data-error="Please enter your subject" id="msg_subject" name="subject" placeholder="Subject" required="" type="text"/>
+           <div class="help-block with-errors">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-6 col-xs-12">
+        <div class="row">
+         <div class="col-md-12">
+          <div class="form-group">
+           <textarea class="form-control" data-error="Write your message" id="message" placeholder="Massage" required="" rows="9"></textarea>
+           <div class="help-block with-errors">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="col-md-12 col-xs-12">
+        <button class="btn btn-common" id="submit" type="submit">
+         Send Message
+        </button>
+        <div class="h3 text-center hidden" id="msgSubmit">
+        </div>
+        <div class="clearfix">
+        </div>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<!-- content Section End-->
+<iframe allowfullscreen="" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.7388161748013!2d74.3505737647602!3d31.531332731365982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904e4a8584f6d%3A0x30f2072f483cf709!2sSiddique+Centre%2C+Jail+Road%2C+Lahore%2C+Pakistan!5e0!3m2!1sen!2s!4v1516122721209" style="border:0" width="100%">
+</iframe>
+{% endblock%}

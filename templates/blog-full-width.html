@@ -1,0 +1,325 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!-- Header Section End -->
+<!-- Start Page Header -->
+<div class="page-header">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="breadcrumb">
+     <a href="#">
+      <i class="icon-home">
+      </i>
+      Home
+     </a>
+     <span class="crumbs-spacer">
+      <i class="fa fa-angle-double-right">
+      </i>
+     </span>
+     <span class="current">
+      Blog
+     </span>
+     <h2 class="entry-title">
+      Blog Categories
+     </h2>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Page Header -->
+<!-- Start Content -->
+<div id="content">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <!-- Start Post -->
+    <div class="blog-post">
+     <!-- Post thumb -->
+     <div class="post-thumb">
+      <a href="#">
+       <img alt="" src="{% static 'assets/img/blog/img-1.jpg' %}"/>
+      </a>
+      <div class="hover-wrap">
+      </div>
+     </div>
+     <!-- End Post post-thumb -->
+     <!-- Post Content -->
+     <div class="post-content">
+      <h4 class="post-title">
+       <a href="#">
+        Pellentesque malesuadadapibus maximus.
+       </a>
+      </h4>
+      <div class="meta">
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-user">
+         </i>
+         Shamiyo
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-speech">
+         </i>
+         245 Coments
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-calendar">
+         </i>
+         02-07-2017
+        </a>
+       </span>
+      </div>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Class aptent taciti sociosqu ad litora torquent…
+      </p>
+      <a class="readmore" href="{% url 'blog_detail' %}">
+       Read More
+      </a>
+     </div>
+     <!-- Post Content -->
+    </div>
+    <!-- End Post -->
+    <!-- Start Post -->
+    <div class="blog-post">
+     <!-- Post post-thumb -->
+     <div class="post-thumb">
+      <div class="touch-slider owl-carousel" data-slider-pagination="true">
+       <div class="item">
+        <a class="lightbox" href="{% url 'assets/img/blog/blog_1.jpg' %}">
+         <img alt="" src="{% static 'assets/img/blog/blog-1.jpg' %}"/>
+        </a>
+       </div>
+       <div class="item">
+        <a class="lightbox" href="{% url 'assets/img/blog/blog_2.jpg' %}">
+         <img alt="" src="{% static 'assets/img/blog/blog-2.jpg' %}"/>
+        </a>
+       </div>
+       <div class="item">
+        <a class="lightbox" href="{% url 'assets/img/blog/blog_3.jpg' %}">
+         <img alt="" src="{% static 'assets/img/blog/blog-3.jpg' %}"/>
+        </a>
+       </div>
+      </div>
+     </div>
+     <!-- End Post post-thumb -->
+     <!-- Post Content -->
+     <div class="post-content">
+      <h4 class="post-title">
+       <a href="#">
+        Pellentesque malesuadadapibus maximus.
+       </a>
+      </h4>
+      <div class="meta">
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-user">
+         </i>
+         Shamiyo
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-speech">
+         </i>
+         245 Coments
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-calendar">
+         </i>
+         02-07-2017
+        </a>
+       </span>
+      </div>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Class aptent taciti sociosqu ad litora torquent…
+      </p>
+      <a class="readmore" href="{% url 'blog_detail' %}">
+       Read More
+      </a>
+     </div>
+     <!-- Post Content -->
+    </div>
+    <!-- End Post -->
+    <!-- Start Post -->
+    <div class="blog-post quote-post">
+     <div class="quote-wrap">
+      <i class="fa fa-quote-left">
+      </i>
+      <blockquote class="text-center">
+       Crafting visually stunning memorable experiences
+       <br/>
+       for web and interfaces.
+      </blockquote>
+      <i class="fa fa-quote-right">
+      </i>
+     </div>
+     <!-- Post Content -->
+     <div class="post-content">
+      <div class="meta">
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-user">
+         </i>
+         Shamiyo
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-speech">
+         </i>
+         245 Coments
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-calendar">
+         </i>
+         02-07-2017
+        </a>
+       </span>
+      </div>
+      <a class="readmore" href="{% url 'blog_detail' %}">
+       Leave a Comment
+      </a>
+     </div>
+     <!-- Post Content -->
+    </div>
+    <!-- End Post -->
+    <!-- Start Post -->
+    <div class="blog-post audio-post">
+     <!-- Post thumb -->
+     <div class="post-thumb">
+      <iframe frameborder="no" height="450" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/100409529&amp;color=f50057&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" width="100%">
+      </iframe>
+     </div>
+     <!-- End Post post-thumb -->
+     <!-- Post Content -->
+     <div class="post-content">
+      <h4 class="post-title">
+       <a href="#">
+        Pellentesque malesuadadapibus maximus.
+       </a>
+      </h4>
+      <div class="meta">
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-user">
+         </i>
+         Shamiyo
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-speech">
+         </i>
+         245 Coments
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-calendar">
+         </i>
+         02-07-2017
+        </a>
+       </span>
+      </div>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Class aptent taciti sociosqu ad litora torquent…
+      </p>
+      <a class="readmore" href="{% url 'blog_detail' %}">
+       Read More
+      </a>
+     </div>
+     <!-- Post Content -->
+    </div>
+    <!-- End Post -->
+    <!-- Start Post -->
+    <div class="blog-post">
+     <!-- Post thumb -->
+     <div class="post-thumb">
+      <a href="#">
+       <img alt="" src="{% static 'assets/img/blog/img-2.jpg' %}"/>
+      </a>
+      <div class="hover-wrap">
+      </div>
+     </div>
+     <!-- End Post post-thumb -->
+     <!-- Post Content -->
+     <div class="post-content">
+      <h4 class="post-title">
+       <a href="#">
+        Pellentesque malesuadadapibus maximus.
+       </a>
+      </h4>
+      <div class="meta">
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-user">
+         </i>
+         Shamiyo
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-speech">
+         </i>
+         245 Coments
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-calendar">
+         </i>
+         02-07-2017
+        </a>
+       </span>
+      </div>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Class aptent taciti sociosqu ad litora torquent…
+      </p>
+      <a class="readmore" href="{% url 'blog_detail' %}">
+       Read More
+      </a>
+     </div>
+     <!-- Post Content -->
+    </div>
+    <!-- End Post -->
+    <!-- Start Pagination -->
+    <div class="pagination">
+     <div class="results-navigation pull-left">
+      Showing: 1 - 6 Of 17
+     </div>
+     <nav class="navigation pull-right">
+      <span class="current page-num">
+       1
+      </span>
+      <a class="page-num" href="#">
+       2
+      </a>
+      <a class="page-num" href="#">
+       3
+      </a>
+      <div class="divider">
+       ...
+      </div>
+      <a class="next-page" href="#">
+       <i class="fa fa-angle-right">
+       </i>
+      </a>
+     </nav>
+    </div>
+    <!-- End Pagination -->
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Content -->
+{% endblock%}

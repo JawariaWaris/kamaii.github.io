@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!-- Header Section End -->
+<!-- Start Page Header -->
+<div class="page-header">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="breadcrumb">
+     <a href="#">
+      <i class="icon-home">
+      </i>
+      Home
+     </a>
+     <span class="crumbs-spacer">
+      <i class="fa fa-angle-double-right">
+      </i>
+     </span>
+     <span class="current">
+      Post an Ad
+     </span>
+     <h2 class="entry-title">
+      Post Your Services and Start Selling
+     </h2>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Page Header -->
+<!-- Start Content -->
+<div id="content">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12 col-lg-6 col-lg-offset-3">
+    <div class="login">
+     <div class="login-form-container">
+      <div class="login-text">
+       <h3>
+        Post Your Services/Products
+       </h3>
+       <p>
+        Please fill this form to be an Entrepreneur
+        <p>
+        </p>
+       </p>
+      </div>
+      <!-- Ad Form Start -->
+      <form class="Ad-form" method="post" role="form">
+       <div class="form-group">
+        <div class="controls">
+         <div>
+          <input class="form-control" name="name" placeholder="Title of your Ad" type="text"/>
+         </div>
+        </div>
+        <div class="form-group">
+         <div class="controls">
+          <p>
+           Choose Your category
+          </p>
+          <select>
+           <option value="Service">
+            Service
+           </option>
+           <option value="Product">
+            Poduct
+           </option>
+          </select>
+         </div>
+        </div>
+        <div class="form-group">
+         <div class="controls">
+          <input class="form-control" name="description" placeholder="Description" style="height:100px;width:480px;" type="text"/>
+         </div>
+        </div>
+        <div class="form-group">
+         <div class="controls">
+          <input name="submit" type="submit" value="Upload Image"/>
+         </div>
+        </div>
+        <div class="form-group">
+         <div class="controls">
+          <input class="form-control" min="1" name="Price" placeholder="Set Your Price" type="number"/>
+          <br/>
+         </div>
+        </div>
+        <div class="button-box">
+         <button class="btn btn-common log-btn" type="submit">
+          Post
+         </button>
+        </div>
+       </div>
+      </form>
+      <!-- Account Form End -->
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Content -->
+{% endblock%}

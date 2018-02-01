@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!-- Header Section End -->
+<!-- Start Page Header -->
+<div class="page-header">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="breadcrumb">
+     <a href="#">
+      <i class="icon-home">
+      </i>
+      Home
+     </a>
+     <span class="crumbs-spacer">
+      <i class="fa fa-angle-double-right">
+      </i>
+     </span>
+     <span class="current">
+      Order
+     </span>
+     <h2 class="entry-title">
+      Order Tracking
+     </h2>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Page Header -->
+<!-- Start Content -->
+<div id="content">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12 col-lg-6 col-lg-offset-3">
+    <div class="login">
+     <div class="login-form-container">
+      <div class="login-text">
+       <h3>
+        Order Tracking
+       </h3>
+       <p>
+        Please Register using account detail bellow.
+       </p>
+      </div>
+      <!-- Login Form Start -->
+      <form class="track-order" method="post" role="form">
+       <div class="form-group">
+        <div class="controls">
+         <label>
+          Order ID
+         </label>
+         <input class="form-control" name="orderid" placeholder="Found in your order confirmation email." type="text"/>
+        </div>
+       </div>
+       <div class="form-group">
+        <div class="controls">
+         <label>
+          Billing Email
+         </label>
+         <input class="form-control" name="orderid" placeholder="Email you used during checkout." type="password"/>
+        </div>
+       </div>
+       <div class="button-box">
+        <button class="btn btn-common log-btn" type="submit">
+         track order
+        </button>
+       </div>
+      </form>
+      <!-- Login Form End -->
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Content -->
+{% endblock%}

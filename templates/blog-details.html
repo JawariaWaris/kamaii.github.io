@@ -1,0 +1,535 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!-- Header Section End -->
+<!-- Start Page Header -->
+<div class="page-header">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="breadcrumb">
+     <a href="#">
+      <i class="icon-home">
+      </i>
+      Home
+     </a>
+     <span class="crumbs-spacer">
+      <i class="fa fa-angle-double-right">
+      </i>
+     </span>
+     <span class="current">
+      Single
+     </span>
+     <h2 class="entry-title">
+      Blog Categories
+     </h2>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- End Page Header -->
+<!-- Start Content -->
+<div id="content">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-8">
+    <!-- Start Post -->
+    <div class="blog-post">
+     <!-- Post thumb -->
+     <div class="post-thumb">
+      <a href="#">
+       <img alt="" src="{% static 'img/blog/img-1.jpg' %}"/>
+      </a>
+      <div class="hover-wrap">
+      </div>
+     </div>
+     <!-- End Post post-thumb -->
+     <!-- Post Content End -->
+     <div class="post-content">
+      <h4 class="post-title">
+       <a href="#">
+        Pellentesque malesuadadapibus maximus.
+       </a>
+      </h4>
+      <div class="meta">
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-user">
+         </i>
+         Shamiyo
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-speech">
+         </i>
+         245 Coments
+        </a>
+       </span>
+       <span class="meta-part">
+        <a href="#">
+         <i class="icon-calendar">
+         </i>
+         02-07-2017
+        </a>
+       </span>
+      </div>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Class aptent taciti sociosqu ad litora torquent…
+      </p>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquam facere aliquid atque accusamus nostrum mollitia beatae quasi vel dolorem, autem nisi! Eius facere magni culpa commodi voluptatem, ducimus dolorum.
+      </p>
+      <blockquote>
+       <i class="fa fa-quote-left">
+       </i>
+       <span class="quote-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea totam iure ullam dolore eum, accusamus enim libero magnam ipsa aspernatur porro. Maiores temporibus laborum quidem explicabo voluptatibus eum dolores ratione.
+       </span>
+      </blockquote>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam autem error perferendis tenetur placeat enim nostrum cum repellendus porro nesciunt minima aspernatur libero excepturi, voluptatibus ex nihil sit consequatur itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa praesentium sint, harum, possimus minus nisi iure pariatur exercitationem blanditiis nesciunt sequi! Nisi, neque, laborum voluptatem exercitationem minus facere reiciendis quis.
+      </p>
+      <div class="row">
+       <div class="col-sm-6">
+        <img alt="" src="{% static 'img/blog/sing-off.jpg' %}"/>
+       </div>
+       <div class="col-sm-6">
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam autem error perferendis tenetur placeat enim nostrum cum repellendus voluptatibus ex nihil sit consequatur itaque.
+        </p>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa praesentium sint, harum, possimus minus nisi iure pariatur exercitationem laborum voluptatem exercitationem minus facere reiciendis quis.
+        </p>
+       </div>
+      </div>
+     </div>
+     <!-- Post Content End -->
+     <!-- Share social Start-->
+     <div class="share">
+      <div class="pull-left">
+       <div class="post-tags-list">
+        <span>
+         <i class="icon-tag">
+         </i>
+        </span>
+        <a href="#">
+         Clothes
+        </a>
+        <a href="#">
+         Digital
+        </a>
+        <a href="#">
+         Fashion
+        </a>
+        <a href="#">
+         Shoes
+        </a>
+        <a href="#">
+         Accessproes
+        </a>
+       </div>
+      </div>
+      <div class="social-link pull-right">
+       <a href="#">
+        <i class="icon-social-twitter">
+        </i>
+       </a>
+       <a href="#">
+        <i class="icon-social-facebook">
+        </i>
+       </a>
+       <a href="#">
+        <i class="icon-social-google">
+        </i>
+       </a>
+       <a href="#">
+        <i class="icon-social-linkedin">
+        </i>
+       </a>
+      </div>
+     </div>
+     <!-- Share social End-->
+    </div>
+    <!-- End Post -->
+    <!-- Start Comment Area -->
+    <div id="comments">
+     <h2 class="comments-title">
+      09 Comments:
+     </h2>
+     <ol class="comments-list">
+      <li>
+       <div class="media">
+        <div class="media-left">
+         <a href="#">
+          <img alt="" src="{% static 'img/blog/user1.jpg' %}"/>
+         </a>
+        </div>
+        <div class="media-body">
+         <h4 class="media-heading">
+          Jk Rokky
+         </h4>
+         <div class="meta">
+          <span class="meta-part">
+           <a href="#">
+            <i class="icon-user">
+            </i>
+            Shamiyo
+           </a>
+          </span>
+          <span class="meta-part">
+           <a href="#">
+            <i class="icon-calendar">
+            </i>
+            02-07-2017
+           </a>
+          </span>
+          <a class="reply-link" href="#">
+           <i class="fa fa-reply-all">
+           </i>
+           Reply
+          </a>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a bibendum elit.
+                       Suspendisse nec facilisis lectus, id pellentesque enim.
+         </p>
+        </div>
+       </div>
+       <ul>
+        <li>
+         <div class="media">
+          <div class="media-left">
+           <a href="#">
+            <img alt="" src="{% static 'img/blog/user2.jpg' %}"/>
+           </a>
+          </div>
+          <div class="media-body">
+           <h4 class="media-heading">
+            Jk Rokky
+           </h4>
+           <div class="meta">
+            <span class="meta-part">
+             <a href="#">
+              <i class="icon-user">
+              </i>
+              Shamiyo
+             </a>
+            </span>
+            <span class="meta-part">
+             <a href="#">
+              <i class="icon-calendar">
+              </i>
+              02-07-2017
+             </a>
+            </span>
+            <a class="reply-link" href="#">
+             <i class="fa fa-reply-all">
+             </i>
+             Reply
+            </a>
+           </div>
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a bibendum elit.
+                           Suspendisse nec facilisis lectus, id pellentesque enim.
+           </p>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <div class="media">
+        <div class="media-left">
+         <a href="#">
+          <img alt="" src="{% static 'img/blog/user3.jpg' %}"/>
+         </a>
+        </div>
+        <div class="media-body">
+         <h4 class="media-heading">
+          Jk Rokky
+         </h4>
+         <div class="meta">
+          <span class="meta-part">
+           <a href="#">
+            <i class="icon-user">
+            </i>
+            Shamiyo
+           </a>
+          </span>
+          <span class="meta-part">
+           <a href="#">
+            <i class="icon-calendar">
+            </i>
+            02-07-2017
+           </a>
+          </span>
+          <a class="reply-link" href="#">
+           <i class="fa fa-reply-all">
+           </i>
+           Reply
+          </a>
+         </div>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a bibendum elit.
+                       Suspendisse nec facilisis lectus, id pellentesque enim.
+         </p>
+        </div>
+       </div>
+       <ul>
+        <li>
+         <div class="media">
+          <div class="media-left">
+           <a href="#">
+            <img alt="" src="{% static 'img/blog/user4.jpg' %}"/>
+           </a>
+          </div>
+          <div class="media-body">
+           <h4 class="media-heading">
+            Jk Rokky
+           </h4>
+           <div class="meta">
+            <span class="meta-part">
+             <a href="#">
+              <i class="icon-user">
+              </i>
+              Shamiyo
+             </a>
+            </span>
+            <span class="meta-part">
+             <a href="#">
+              <i class="icon-calendar">
+              </i>
+              02-07-2017
+             </a>
+            </span>
+            <a class="reply-link" href="#">
+             <i class="fa fa-reply-all">
+             </i>
+             Reply
+            </a>
+           </div>
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a bibendum elit.
+                           Suspendisse nec facilisis lectus, id pellentesque enim.
+           </p>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </li>
+     </ol>
+     <!-- Start Respond Form -->
+     <div id="respond">
+      <h2 class="respond-title">
+       Leave And reply:
+      </h2>
+      <form action="#">
+       <div class="row">
+        <div class="col-md-6">
+         <div class="form-group">
+          <input class="form-control" id="author" name="author" placeholder="Name" size="30" type="text" value=""/>
+         </div>
+        </div>
+        <div class="col-md-6">
+         <div class="form-group">
+          <input class="form-control" id="email" name="author" placeholder="Email" size="30" type="text" value=""/>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-md-12">
+         <div class="form-group">
+          <textarea class="form-control" cols="45" id="comment" name="comment" placeholder="Write your comments.." rows="8"></textarea>
+         </div>
+         <button class="btn btn-common" id="submit" type="submit">
+          Post Comment
+         </button>
+        </div>
+       </div>
+      </form>
+     </div>
+     <!-- End Respond Form -->
+    </div>
+    <!-- End Comment Area -->
+   </div>
+   <!--Sidebar-->
+   <aside class="col-md-4 right-sidebar" id="sidebar">
+    <!-- Popular Posts widget -->
+    <div class="widget widget-popular-posts">
+     <h4 class="w-title">
+      Recent Posts
+     </h4>
+     <ul class="posts-list">
+      <li>
+       <div class="widget-thumb">
+        <a href="#">
+         <img alt="" src="{% static 'img/post/thumb1.jpg' %}"/>
+        </a>
+       </div>
+       <div class="widget-content">
+        <a href="#">
+         Nam lobortis elit justo ultrices
+        </a>
+        <span>
+         <i class="icon-calendar">
+         </i>
+         27-07-2017
+        </span>
+       </div>
+       <div class="clearfix">
+       </div>
+      </li>
+      <li>
+       <div class="widget-thumb">
+        <a href="#">
+         <img alt="" src="{% static 'img/post/thumb2.jpg' %}"/>
+        </a>
+       </div>
+       <div class="widget-content">
+        <a href="#">
+         Sed ut perspiciatis unde
+        </a>
+        <span>
+         <i class="icon-calendar">
+         </i>
+         27-07-2017
+        </span>
+       </div>
+       <div class="clearfix">
+       </div>
+      </li>
+      <li>
+       <div class="widget-thumb">
+        <a href="#">
+         <img alt="" src="{% static 'img/post/thumb3.jpg' %}"/>
+        </a>
+       </div>
+       <div class="widget-content">
+        <a href="#">
+         Sed in odio faucibus sagittis
+        </a>
+        <span>
+         <i class="icon-calendar">
+         </i>
+         27-07-2017
+        </span>
+       </div>
+       <div class="clearfix">
+       </div>
+      </li>
+     </ul>
+    </div>
+    <!-- About Widget Start -->
+    <div class="widget widget-categories">
+     <h4 class="w-title">
+      About
+     </h4>
+     <img alt="" src="{% static 'img/blog/about-w.jpg' %}"/>
+     <div class="about-widget-content">
+      <h5>
+       Pellentesque malesapibus maximus.
+      </h5>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias illum ratione,
+      </p>
+     </div>
+    </div>
+    <!-- About Widget End -->
+    <!-- Categories Widget -->
+    <div class="widget widget-categories">
+     <h4 class="w-title">
+      Categories
+     </h4>
+     <ul class="cat-list">
+      <li>
+       <a href="#">
+        <i class="icon-folder-alt">
+        </i>
+        All about clothing
+        <span class="num-posts">
+         (50)
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <i class="icon-folder-alt">
+        </i>
+        Make-up &amp; beauty
+        <span class="num-posts">
+         (18)
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <i class="icon-folder-alt">
+        </i>
+        Accessories
+        <span class="num-posts">
+         (0)
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <i class="icon-folder-alt">
+        </i>
+        House Hold Items
+        <span class="num-posts">
+         (11)
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <i class="icon-folder-alt">
+        </i>
+        Home Made Dishes
+        <span class="num-posts">
+         (15)
+        </span>
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- Add Widget -->
+    <div class="add">
+     <img alt="" src="{% static 'img/blog/add-blog.jpg' %}"/>
+    </div>
+    <!-- Tag Media -->
+    <div class="widget tag">
+     <h4 class="w-title">
+      Popular Tags
+     </h4>
+     <a href="#">
+      Fashion
+     </a>
+     <a href="#">
+      Clothing
+     </a>
+     <a href="#">
+      Trends
+     </a>
+     <a href="#">
+      House Hold Items
+     </a>
+     <a href="#">
+      Beauty
+     </a>
+     <a href="#">
+      Sell Off
+     </a>
+    </div>
+   </aside>
+   <!--End sidebar-->
+  </div>
+ </div>
+</div>
+<!-- End Content -->
+{% endblock%}

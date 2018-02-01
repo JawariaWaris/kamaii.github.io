@@ -1,0 +1,1155 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Ecommerce" name="author"/>
+  <title>
+   Kamaii.pk
+  </title>
+  <!-- Favicon -->
+  <link href="{% static 'img/favicon.png' %}" rel="shortcut icon"/>
+  <!-- Bootstrap CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'css/bootstrap-select.min.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Font Awesome CSS -->
+  <link href="{% static 'fonts/font-awesome.min.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Line Icons CSS -->
+  <link href="{% static 'fonts/line-icons/line-icons.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Main Styles -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Rev Slider Css -->
+  <link href="{% static 'extras/settings.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Animate CSS -->
+  <link href="{% static 'extras/animate.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Owl Carousel -->
+  <link href="{% static 'extras/owl.carousel.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'extras/owl.theme.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Range Slider -->
+  <link href="{% static 'extras/ion.rangeSlider.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'extras/ion.rangeSlider.skinFlat.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Modals Effects -->
+  <link href="{% static 'extras/component.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Slick Slider -->
+  <link href="{% static 'extras/slick.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'extras/slick-theme.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Nivo Lightbox Css -->
+  <link href="{% static 'extras/nivo-lightbox.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Slicknav Css -->
+  <link href="{% static 'css/slicknav.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Responsive CSS Styles -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <!-- Header Section Start -->
+  <div class="header">
+   <!-- Start Top Bar -->
+   <div class="top-bar">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-6 col-sm-4">
+       <div class="language-wrapper">
+        <div class="box-language">
+         <form id="form-language">
+          <div class="btn-group toggle-wrap">
+           <span class="toggle">
+            <span>
+             <img alt="English" height="11" src="{% static 'img/language/flag-lang.png' %}" title="English" width="16"/>
+             English
+            </span>
+            <span class="hidden">
+             Language
+            </span>
+           </span>
+           <ul class="toggle_cont pull-right" style="display: none;">
+            <li>
+             <button class="language-select selected" name="en-gb" type="button">
+              <img alt="English" height="11" src="{% static 'img/language/en-gb.png' %}" title="English" width="16"/>
+              English
+             </button>
+            </li>
+            <li>
+             <button class="language-select" name="de-DE" type="button">
+              <img alt="Deutsch" height="11" src="{% static 'img/language/de-DE.png' %}" title="Deutsch" width="16"/>
+              Deutsch
+             </button>
+            </li>
+            <li>
+             <button class="language-select" name="ru-ru" type="button">
+              <img alt="Русский" height="11" src="{% static 'img/language/ru-ru.png' %}" title="Русский" width="16"/>
+              Русский
+             </button>
+            </li>
+           </ul>
+          </div>
+         </form>
+        </div>
+        <div class="box-currency">
+         <form id="form-currency" method="post">
+          <div class="btn-group toggle-wrap">
+           <span class="toggle">
+            Rs. Rupee
+           </span>
+           <ul class="toggle_cont pull-right">
+            <li>
+             <button class="currency-select selected" name="USD" type="button">
+              $ USD
+             </button>
+            </li>
+            <li>
+             <button class="currency-select" name="EUR" type="button">
+              € EUR
+             </button>
+            </li>
+            <li>
+             <button class="currency-select" name="GBP" type="button">
+              Rs. Rupee
+             </button>
+            </li>
+           </ul>
+          </div>
+         </form>
+        </div>
+        <a href="#">
+         <i class="icon-phone">
+         </i>
+         Call Us: +92 300 1234567
+        </a>
+       </div>
+       <div class="clear">
+       </div>
+      </div>
+      <div class="col-md-6 col-sm-8">
+       <!-- shopping cart end -->
+       <div class="search-area">
+        <form>
+         <div class="control-group">
+          <ul class="categories-filter animate-dropdown">
+           <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'category' %}">
+             Categories
+             <span class="caret">
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li class="menu-header">
+              Clothing
+             </li>
+             <li>
+              <a href="#" tabindex="-1">
+               - Men
+              </a>
+             </li>
+             <li>
+              <a href="#" tabindex="-1">
+               - Women
+              </a>
+             </li>
+             <li>
+              <a href="#" tabindex="-1">
+               - Boys
+              </a>
+             </li>
+             <li>
+              <a href="#" tabindex="-1">
+               - Girls
+              </a>
+             </li>
+             <li class="menu-header">
+              Electronics
+             </li>
+             <li>
+              <a href="#" tabindex="-1">
+               - Laptops
+              </a>
+             </li>
+             <li>
+              <a href="#" tabindex="-1">
+               - Desktops
+              </a>
+             </li>
+             <li>
+              <a href="#" tabindex="-1">
+               - Cameras
+              </a>
+             </li>
+             <li>
+              <a href="#" tabindex="-1">
+               - Mobile Phones
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <input class="search-field" placeholder="Search here..."/>
+          <a class="search-button" href="#">
+           <i class="icon-magnifier">
+           </i>
+          </a>
+         </div>
+        </form>
+       </div>
+       <!-- shopping cart start -->
+       <div class="shop-cart">
+        <ul>
+         <li>
+          <a class="cart-icon cart-btn" href="{% url 'wishlist' %}">
+           <span class="icon-heart">
+           </span>
+          </a>
+         </li>
+         <li>
+          <a class="cart-icon cart-btn" href="#">
+           <i class="icon-basket-loaded">
+           </i>
+           <span class="cart-label">
+            3
+           </span>
+          </a>
+          <div class="cart-box">
+           <div class="popup-container">
+            <div class="cart-entry">
+             <a class="image" href="#">
+              <img alt="" src="{% static 'img/products/product-menu-1.jpg' %}"/>
+             </a>
+             <div class="content">
+              <a class="title" href="#">
+               Pullover Batwing
+              </a>
+              <p class="quantity">
+               Quantity: 3
+              </p>
+              <span class="price">
+               $45.00
+              </span>
+             </div>
+             <div class="button-x">
+              <i class="icon-close">
+              </i>
+             </div>
+            </div>
+            <div class="cart-entry">
+             <a class="image" href="#">
+              <img alt="" src="{% static 'img/products/product-menu-2.jpg' %}"/>
+             </a>
+             <div class="content">
+              <a class="title" href="#">
+               Pullover Batwing
+              </a>
+              <p class="quantity">
+               Quantity: 3
+              </p>
+              <span class="price">
+               $90.00
+              </span>
+             </div>
+             <div class="button-x">
+              <i class="icon-close">
+              </i>
+             </div>
+            </div>
+            <div class="summary">
+             <div class="subtotal">
+              Sub Total
+             </div>
+             <div class="price-s">
+              $210.5
+             </div>
+            </div>
+            <div class="cart-buttons">
+             <a class="btn btn-border-2" href="#">
+              View Cart
+             </a>
+             <a class="btn btn-common" href="#">
+              Checkout
+             </a>
+             <div class="clear">
+             </div>
+            </div>
+           </div>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- End Top Bar -->
+   <!-- Start  Logo & Naviagtion  -->
+   <nav class="navbar navbar-default" data-offset-top="50" data-spy="affix">
+    <div class="container">
+     <div class="row">
+      <div class="navbar-header">
+       <!-- Stat Toggle Nav Link For Mobiles -->
+       <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+        <i class="fa fa-bars">
+        </i>
+       </button>
+       <a class="navbar-brand" href="{% url 'index' %}">
+        <img alt="" src="{% static 'img/logo.png' %}"/>
+       </a>
+      </div>
+      <div class="navbar-collapse collapse">
+       <!-- Start Navigation List -->
+       <ul class="nav navbar-nav">
+        <li>
+         <a class="active" href="{% url 'index' %}">
+          Home
+          <span class="caret">
+          </span>
+         </a>
+         <ul class="dropdown">
+          <li>
+           <a class="active" href="{% url 'index' %}">
+            Home V1
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'index_2' %}">
+            Home V2
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="{% url 'about' %}">
+          About
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'Ad' %}">
+          Post an Ad
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Catalog
+          <span class="caret">
+          </span>
+         </a>
+         <div class="dropdown mega-menu megamenu1">
+          <div class="row">
+           <div class="col-sm-3 col-xs-12">
+            <ul class="menulinks">
+             <li class="maga-menu-title">
+              <a href="#">
+               Men
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Clothing
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Handbags
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Maternity
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Jewelry
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Scarves
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-3 col-xs-12">
+            <ul class="menulinks">
+             <li class="maga-menu-title">
+              <a href="#">
+               Women
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Handbags
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Jewelry
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Clothing
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Watches
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Hats
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-3 col-xs-12">
+            <ul class="menulinks">
+             <li class="maga-menu-title">
+              <a href="#">
+               Accessories
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Belts
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Scarves
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Hats
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Ties
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'category' %}">
+               Handbags
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-3 col-xs-12">
+            <span class="block-last">
+             <img alt="" src="{% static 'img/block_menu.jpg' %}"/>
+            </span>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li>
+         <a href="#">
+          Shop
+          <span class="caret">
+          </span>
+         </a>
+         <div class="dropdown mega-menu megamenu2">
+          <div class="row">
+           <div class="col-sm-3 col-xs-12">
+            <ul class="menulinks">
+             <li class="maga-menu-title">
+              <a href="#">
+               Shop Types
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'shop' %}">
+               Shop
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'shop_grid' %}">
+               Shop Grid Sidebar
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'shop_list' %}">
+               Shop List Sidebar
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'shop_right_sidebar' %}">
+               Shop Right Sidebar
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'product_details' %}">
+               Product Details
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-3 col-xs-12">
+            <ul class="menulinks">
+             <li class="maga-menu-title">
+              <a href="#">
+               Shop Pages
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'shopping_cart' %}">
+               Cart Page
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'checkout' %}">
+               Checkout Page
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'wishlist' %}">
+               Wishlist
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'order' %}">
+               Your Order
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'login' %}">
+               Login
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'login_form' %}">
+               My Account
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </li>
+        <li>
+         <a href="{% url 'services' %}">
+          Services
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'faq' %}">
+          FAQs
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'blog_details' %}">
+          Blog
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'contact' %}">
+          Contact
+         </a>
+        </li>
+       </ul>
+       <!-- End Navigation List -->
+       <div class="icon-right pull-right">
+        <div class="text-right">
+         <!-- account menu start -->
+         <div class="account link-inline">
+          <div class="dropdown text-right">
+           <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="icon-user">
+            </span>
+            SignUp/SignIn
+            <span class="icon-arrow-down">
+            </span>
+           </a>
+           <ul class="dropdown-menu">
+            <!-- <li><a href="login-form.html"><span class="icon icon-user"></span>My Account</a></li> -->
+            <!--  <li><a href="wishlist.html"><span class="icon icon-heart"></span>My Wishlist</a></li> -->
+            <!--<li><a href="compare.html"><span class="icon icon-graph"></span>Compare</a></li> -->
+            <!--<li><a href="checkout.html"><span class="icon icon-check"></span>Checkout</a></li> -->
+            <li>
+             <a href="{% url 'login' %}">
+              <span class="icon icon-lock">
+              </span>
+              Sign In
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'register' %}">
+              <span class="icon icon-user-follow">
+              </span>
+              Sign Up
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'seller' %}">
+              <span class="icon icon-user-follow">
+              </span>
+              Sign Up As A Seller
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="icon icon-close">
+              </span>
+              close
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <!-- account menu end -->
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- End Header Logo & Naviagtion -->
+    <!-- Mobile Menu Start -->
+    <ul class="mobile-menu">
+     <li>
+      <a class="active" href="{% url 'index' %}">
+       Home
+      </a>
+      <ul class="dropdown">
+       <li>
+        <a class="active" href="{% url 'index' %}">
+         Home V1
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'index_2' %}">
+         Home V2
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="{% url 'about' %}">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="{% url 'Ad' %}">
+       Post an Ad
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Catalog
+      </a>
+      <ul class="dropdown menulinks">
+       <li class="maga-menu-title">
+        <a href="#">
+         Men
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Clothing
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Handbags
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Maternity
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Jewelry
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Scarves
+        </a>
+       </li>
+       <li class="maga-menu-title">
+        <a href="#">
+         Women
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Handbags
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Jewelry
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Clothing
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Watches
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Hats
+        </a>
+       </li>
+       <li class="maga-menu-title">
+        <a href="#">
+         Accessories
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Belts
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Scarves
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Hats
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Ties
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'category' %}">
+         Handbags
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="#">
+       Shop
+      </a>
+      <ul class="menulinks">
+       <li class="maga-menu-title">
+        <a href="#">
+         Shop Types
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'shop' %}">
+         Shop
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'shop_grid' %}">
+         Shop Grid Sidebar
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'shop_list' %}">
+         Shop List Sidebar
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'shop_right_sidebar' %}">
+         Shop Right Sidebar
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'product_details' %}">
+         Product Details
+        </a>
+       </li>
+       <li class="maga-menu-title">
+        <a href="#">
+         Shop Pages
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'shopping_cart' %}">
+         Cart Page
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'checkout' %}">
+         Checkout Page
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'wishlist' %}">
+         Wishlist
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'order' %}">
+         Your Order
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'login' %}">
+         Login
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'login_form' %}">
+         My Account
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="{% url 'services' %}">
+       Services
+      </a>
+     </li>
+     <li>
+      <a href="{% url 'faq' %}">
+       FAQs
+      </a>
+     </li>
+     <li>
+      <a href="{% url 'blog_details' %}">
+       Blog
+      </a>
+     </li>
+     <li>
+      <a href="{% url 'contact' %}">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <!-- Mobile Menu End -->
+   </nav>
+  </div>
+  <!-- Header Section End -->
+
+
+
+   {% block body %}
+    {% endblock %}
+
+
+  <!-- Footer Start -->
+  <footer class="section">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-3 col-sm-6">
+      <div class="contact-us">
+       <h3 class="widget-title">
+        Contact Us
+       </h3>
+       <ul class="contact-list">
+        <li>
+         <i class="icon-home">
+         </i>
+         <span>
+          Siddique Trade Center,Jail Road,Lahore,Punjab,Pakistan.
+         </span>
+        </li>
+        <li>
+         <i class="icon-call-out">
+         </i>
+         <span>
+          +92 300 1234567
+          <br/>
+          +92 300 7654321
+         </span>
+        </li>
+        <li>
+         <i class="icon-envelope">
+         </i>
+         <span>
+          contact@kamaii.com  info@kamaii.com
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-md-3 col-sm-6">
+      <h3 class="widget-title">
+       Useful Links
+      </h3>
+      <ul>
+       <li>
+        <a href="{% url 'login' %}">
+         My Account
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'contact' %}">
+         Contact
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'checkout' %}">
+         Checkout
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'wishlist' %}">
+         Wishlist
+        </a>
+       </li>
+       <li>
+        <a href="{% url 'compare' %}">
+         Compare
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-md-3 col-sm-6">
+      <h3 class="widget-title">
+       Product Tags
+      </h3>
+      <div class="tagcloud">
+       <a class="tag-link" href="#">
+        Accessories
+       </a>
+       <a class="tag-link" href="#">
+        Beauty Items
+       </a>
+       <a class="tag-link" href="#">
+        Bestseller
+       </a>
+       <a class="tag-link" href="#">
+        Sell Off
+       </a>
+      </div>
+     </div>
+     <div class="col-md-3 col-sm-6">
+      <div class="block-subscribe">
+       <h3 class="widget-title">
+        Newsletter
+       </h3>
+       <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+       </p>
+       <form class="subscribe">
+        <input class="form-control" name="email" placeholder="Enter Email" type="text"/>
+        <button class="btn btn-common" type="submit">
+         Subscribe
+        </button>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- Footer End -->
+  <!-- Copyright Start -->
+  <div id="copyright">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-6 col-sm-6 col-xs-12">
+      <p>
+       All copyrights reserved © 2017
+      </p>
+     </div>
+     <div class="col-md-6 col-sm-6 col-xs-12">
+      <div class="payment pull-right">
+       <img alt="" src="{% static 'img/payment.png' %}"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Copyright End -->
+  <!-- Go To Top Link -->
+  <a class="back-to-top" href="#">
+   <i class="icon-arrow-up">
+   </i>
+  </a>
+  <!-- All modals added here for the demo -->
+  <div class="md-modal md-effect-3" id="modal-3">
+   <div class="md-content">
+    <!-- Product Info Start -->
+    <div class="product-info row">
+     <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="product-details-image">
+       <div class="slider-for slider">
+        <div>
+         <img alt="" src="{% static 'img/single-product/img1.jpg' %}"/>
+        </div>
+        <div>
+         <img alt="" src="{% static 'img/single-product/img2.jpg' %}"/>
+        </div>
+        <div>
+         <img alt="" src="{% static 'img/single-product/img3.jpg' %}"/>
+        </div>
+        <div>
+         <img alt="" src="{% static 'img/single-product/img4.jpg' %}"/>
+        </div>
+        <div>
+         <img alt="" src="{% static 'img/single-product/img5.jpg' %}"/>
+        </div>
+        <div>
+         <img alt="" src="{% static 'img/single-product/img3.jpg' %}"/>
+        </div>
+       </div>
+       <ul class="slider slider-nav" id="productthumbnail">
+        <li>
+         <img alt="" src="{% static 'img/single-product/small/img1.jpg' %}"/>
+        </li>
+        <li>
+         <img alt="" src="{% static 'img/single-product/small/img2.jpg' %}"/>
+        </li>
+        <li>
+         <img alt="" src="{% static 'img/single-product/small/img3.jpg' %}"/>
+        </li>
+        <li>
+         <img alt="" src="{% static 'img/single-product/small/img4.jpg' %}"/>
+        </li>
+        <li>
+         <img alt="" src="{% static 'img/single-product/small/img5.jpg' %}"/>
+        </li>
+        <li>
+         <img alt="" src="{% static 'img/single-product/small/img3.jpg' %}"/>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-md-8 col-sm-6 col-xs-12">
+      <div class="info-panel">
+       <h1 class="product-title">
+        Proin Lectus Ipsum
+       </h1>
+       <!-- Rattion Price -->
+       <div class="price-ratting">
+        <div class="price float-left">
+         $ 120.00
+        </div>
+        <div class="ratting float-right">
+         <div class="product-star">
+          <i class="icon-star active">
+          </i>
+          <i class="icon-star active">
+          </i>
+          <i class="icon-star active">
+          </i>
+          <i class="icon-star active">
+          </i>
+          <i class="icon-star active">
+          </i>
+          <span>
+           (01 Customer Review)
+          </span>
+         </div>
+        </div>
+       </div>
+       <!-- Short Description -->
+       <div class="short-desc">
+        <h5 class="sub-title">
+         Quick Overview
+        </h5>
+        <p>
+         There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+        </p>
+       </div>
+       <!-- Product Size -->
+       <div class="product-size">
+        <h5 class="sub-title">
+         Select Size
+        </h5>
+        <span>
+         S
+        </span>
+        <span class="active">
+         M
+        </span>
+        <span>
+         L
+        </span>
+        <span>
+         XL
+        </span>
+       </div>
+       <!-- Quantity Cart -->
+       <div class="quantity-cart">
+        <button class="btn btn-common">
+         <i class="icon-basket-loaded">
+         </i>
+         add to cart
+        </button>
+       </div>
+       <!-- Share -->
+       <div class="share-icons pull-right">
+        <span>
+         share :
+        </span>
+        <a href="#">
+         <i class="fa fa-facebook">
+         </i>
+        </a>
+        <a href="#">
+         <i class="fa fa-twitter">
+         </i>
+        </a>
+        <a href="#">
+         <i class="fa fa-instagram">
+         </i>
+        </a>
+        <a href="#">
+         <i class="fa fa-pinterest">
+         </i>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Product Info End -->
+    <button class="md-close">
+     <i class="icon-close">
+     </i>
+    </button>
+   </div>
+  </div>
+  <div class="md-overlay">
+  </div>
+  <!-- the overlay element -->
+  <!-- Preloader -->
+  <div id="preloader">
+   <div id="status">
+    <div class="spinner">
+     Loading...
+    </div>
+   </div>
+  </div>
+  <!-- End Preloader -->
+  <!-- All js here -->
+  <script src="{% static 'js/jquery-min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/bootstrap-select.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/owl.carousel.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/ion.rangeSlider.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/modalEffects.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/classie.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/jquery.themepunch.revolution.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/jquery.themepunch.tools.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/nivo-lightbox.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/slick.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/jquery.slicknav.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/form-validator.min.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/contact-form-script.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'js/main.js' %}" type="text/javascript">
+  </script>
+ </body>
+</html>
